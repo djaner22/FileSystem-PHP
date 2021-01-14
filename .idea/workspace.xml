@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26465162-5965-4612-a184-319440f9d38a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file.html" beforeDir="false" afterPath="$PROJECT_DIR$/file.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +41,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1myxt6T5WejUnLNzDGn5I7nVKnP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -67,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610479843772</updated>
       <workItem from="1610479845022" duration="633000" />
-      <workItem from="1610634669686" duration="799000" />
+      <workItem from="1610634669686" duration="939000" />
     </task>
     <task id="LOCAL-00001" summary="file prova">
       <created>1610634732075</created>
@@ -76,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610634732075</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="file prova">
+      <created>1610635494908</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610635494908</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,14 +106,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="file prova" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="390" y="7" key="#PHP" timestamp="1610635531317">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="7" key="#PHP/0.0.1366.728@0.0.1366.728" timestamp="1610635531317" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1610635606811">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1610635606811" />
     <state width="254" height="198" key="RunAnythingAction_Filter_Popup" timestamp="1610634747134">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="254" height="198" key="RunAnythingAction_Filter_Popup/0.0.1366.728@0.0.1366.728" timestamp="1610634747134" />
-    <state x="275" y="84" key="Vcs.Push.Dialog.v2" timestamp="1610634734682">
+    <state x="275" y="84" key="Vcs.Push.Dialog.v2" timestamp="1610635496748">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="84" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1610634734682" />
+    <state x="275" y="84" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1610635496748" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610634794272">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
