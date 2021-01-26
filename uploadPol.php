@@ -8,17 +8,22 @@
 
 <body>
 <?php
-$fila = 1;
-if (($gestor = fopen("test.csv", "r")) !== FALSE) {
-    while (($datos = fgetcsv($gestor, 1000, ",")) !== FALSE) {
-        $numero = count($datos);
-        echo "<p> $numero de campos en la línea $fila: <br /></p>\n";
-        $fila++;
-        for ($c=0; $c < $numero; $c++) {
-            echo $datos[$c] . "<br />\n";
+function arrayFromCSV($file, $hasFieldNames = false, $delimiter = ',', $enclosure='') {
+    $result = Array();
+    $size = filesize($file) +1;
+    $file = fopen($file, 'r');
+    #TO DO: There must be a better way of finding out the size of the longest row... until then
+    if ($hasFieldNames) $keys = fgetcsv($file, $size, $delimiter, $enclosure);
+    while ($row = fgetcsv($file, $size, $delimiter, $enclosure)) {
+        $n = count($row); $res=array();
+        for($i = 0; $i < $n; $i++) {
+            $idx = ($hasFieldNames) ? $keys[$i] : $i;
+            $res[$idx] = $row[i];
         }
+        $result[] = $res;
     }
-    fclose($gestor);
+    fclose($file);
+    return $result;
 }
 ?>
 </body>
