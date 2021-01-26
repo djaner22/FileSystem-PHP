@@ -8,36 +8,18 @@
 
 <body>
 <?php
-
-echo "Nombre Temporal: ".$_FILES['archivo']['tmp_name'].'<br>';
-echo "Tamaño del Archivo: ".$_FILES['archivo']['size'].'<br>';
-echo "Tipo de Archivo: ".$_FILES['archivo']['type'].'<br>';
-echo "Nombre del Archivo: ".$_FILES['archivo']['name'].'<br>';
-echo "<br>";
-/*
-$destino = "\Excel".$_FILES['archivo']['name'];
-$origen = $_FILES['archivo']['tmp_name'];
-if(move_uploaded_file($origen,$destino) == true)
-    echo 'Subido con Éxito'.'<br>';
-else
-    echo 'WTF!!!!';
-*/
-
-$fp = fopen ( $_FILES['archivo']['tmp_name'] , "r" );
-echo '<table width="700">';
-while (( $data = fgetcsv ( $fp , 2048, ";")) !== false ) // Mientras hay líneas que leer...
-{
-    $i = 0;
-    foreach($data as $row)
-    {
-        echo '<tr>';
-        echo '<td>'.$row.'</td>';        // Muestra todos los campos de la fila actual
-        echo '</tr>';
-        $i++ ;
+$fila = 1;
+if (($gestor = fopen("test.csv", "r")) !== FALSE) {
+    while (($datos = fgetcsv($gestor, 1000, ",")) !== FALSE) {
+        $numero = count($datos);
+        echo "<p> $numero de campos en la línea $fila: <br /></p>\n";
+        $fila++;
+        for ($c=0; $c < $numero; $c++) {
+            echo $datos[$c] . "<br />\n";
+        }
     }
+    fclose($gestor);
 }
-echo '</table>';
-fclose($fp);
 ?>
 </body>
 </html>
